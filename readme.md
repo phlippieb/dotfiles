@@ -5,7 +5,7 @@
 First, clone this repo to your machine.
 
 ```
-git clone <TODO -- add link>
+git clone git@github.com:phlippieb/dotfiles.git
 ```
 
 Then, symlink the dotfiles. An easy way to do this is using ThoughtBot's [rcm](https://github.com/thoughtbot/rcm#installation).
