@@ -19,8 +19,10 @@ brew tap thoughtbot/formulae
 brew install rcm
 ```
 
-TODO add a quick and dirty rcm tutorial here.
+### Using rcm
+
+Once installed, cd into this directory, then run `rcup` to symlink the dotfiles into your home dir.
 
 ## Syncing up:
 
-After your dotfiles have been symlinked, any changes you make in your home dir will really be made in this repo. So you can sync them back up to github by simply cd-ing to the .dotfiles directory, and then git-committing-and-pushing.
+After your dotfiles have been symlinked, any changes you make in your home dir will actually be made in this repo. So you can sync them back up to github by simply cd-ing to the .dotfiles directory, and then committing and pushing your changes.
