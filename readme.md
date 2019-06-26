@@ -10,6 +10,15 @@ git clone git@github.com:phlippieb/dotfiles.git
 
 Then, symlink the dotfiles. An easy way to do this is using ThoughtBot's [rcm](https://github.com/thoughtbot/rcm#installation).
 
+### Installing rcm
+
+On MacOS:
+
+```
+brew tap thoughtbot/formulae
+brew install rcm
+```
+
 TODO add a quick and dirty rcm tutorial here.
 
 ## Syncing up:
