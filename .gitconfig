@@ -1,0 +1,76 @@
+[user]
+	email = phlippie.bosman@gmail.com
+	name = phlippieb
+[alias]
+	st = status
+	cm = !~/.gitcm.sh
+	br = branch --list -v
+	ch = checkout
+	ls = log --oneline
+	lss = !'git log --oneline | fzf'
+	s = status --short
+	g = log --graph --abbrev-commit --date=relative --pretty=oneline
+	lg = log --graph --date=relative --pretty=format:'%s%n%C(dim white)%h %C(green)%ar %C(blue)%an%n%C(reset)'
+	cmm = git commit -m
+	b = !git br | grep --color=always ^*
+	df = diff --color-moved
+	ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | sort
+	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+	pod = !pod
+	fastlane = !fastlane
+	aa = add -u
+	edit = !vim
+	e = !vim
+	l = log --oneline -10
+	remove-merged-branches = !git branch --merged | grep -v \"\\*\" | grep -v master | grep -v dev | xargs -n 1 git branch -d
+	sh = !bash
+	yolo = push
+	patch-help = !cat ~/.git-help-patch.md
+	pl = pull
+	clear = !clear
+	cl = !clear
+	fulldf = diff --no-prefix -U1000
+	sub = submodule
+	cp = cherry-pick
+   tags = tag -n --sort=-creatordate
+   ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+	cleanup = !"git branch --merged | egrep -v '(^\\*|master|staging)' | xargs git branch -d"
+[push]
+	default = current
+[merge]
+	tool = p4mergetool
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = p4mergetool
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[aslias]
+	b = rev-parse --abbrev-ref HEAD
+[color "diff"]
+	commit = dim
+[core]
+	excludesfile = /Users/phlippieb/.gitignore_global
+   pager = less -FRX
+	editor = nvim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[gitsh]
+	defaultCommand = s
+	prompt = "%D %c%b%#%w"
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
+[gitsh "color"]
+	default = green
+	modified = yellow
