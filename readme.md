@@ -92,3 +92,4 @@ Or just
 brew install neovim
 ```
 
+Also note that there is some trickiness regarding vimrc and neovim. IIRC [this link](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc) is helpful.
