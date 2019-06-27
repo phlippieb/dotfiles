@@ -41,7 +41,7 @@ If you're using this, then you're probably getting set up on a new machine. To m
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-[Or here's the home page](://brew.sh/)
+[Or here's the home page](http://brew.sh/)
 
 ###  Tmux
 
