@@ -82,3 +82,13 @@ Or just
 pip install ranger-fm
 ```
 
+### Neovim
+
+[Installation instructions](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+
+Or just
+
+```
+brew install neovim
+```
+
