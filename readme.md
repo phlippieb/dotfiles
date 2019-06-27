@@ -72,3 +72,13 @@ brew tap thoughtbot/formulae
 brew install gitsh
 ```
 
+### Ranger
+
+[Installation instructions](https://github.com/ranger/ranger#installing)
+
+Or just
+
+```
+pip install ranger-fm
+```
+
