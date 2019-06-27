@@ -93,3 +93,14 @@ brew install neovim
 ```
 
 Also note that there is some trickiness regarding vimrc and neovim. IIRC [this link](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc) is helpful.
+
+### ag
+
+[Installation instructions](https://kalido.app.link/LawyersWithoutBorders)
+
+Or just
+
+```
+brew install the_silver_searcher
+```
+
