@@ -152,3 +152,8 @@ export KEYTIMEOUT=1
 
 export PATH="/usr/local/sbin:$PATH"
 source ~/.fresh/build/shell.sh
+
+eval "$(rbenv init -)"
+
+# Flutter
+export PATH="$PATH:/Users/phlippieb/bin/flutter/bin"
