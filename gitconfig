@@ -58,6 +58,7 @@
 	excludesfile = /Users/phlippieb/.gitignore_global
    pager = less -FRX
 	editor = nvim
+	ignorecase = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
