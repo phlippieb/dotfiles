@@ -22,6 +22,7 @@ Plugin 'tpope/vim-sleuth.git'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,7 +45,7 @@ set hls
 syntax on
 
 "set background=dark
-colorscheme badwolf
+"colorscheme badwolf
 
 " Lightline (https://github.com/itchyny/lightline.vim)
 " Auto-selected
@@ -73,7 +74,7 @@ set smartindent
 set ai
 set si
 "mouse enabled. to copy to clipb, highlight w/ <shift> held, to paste use <shift><insert>
-set mouse=a
+"set mouse=a
 
 func! StartConqueTermBelow()
    ConqueTermSplit bash
